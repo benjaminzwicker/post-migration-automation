@@ -1,0 +1,10 @@
+{
+    "path": "/company_select.html",
+    "textInputs": {
+        "email": "Email",
+        "password": "Password"
+    },
+    "buttons": {
+        "signIn": "Sign In"
+    }
+}

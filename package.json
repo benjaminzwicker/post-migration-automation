@@ -1,0 +1,21 @@
+{
+  "name": "post-migration-automation",
+  "version": "1.0.0",
+  "description": "Automation Challenge",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminzwicker/post-migration-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjaminzwicker/post-migration-automation/issues"
+  },
+  "homepage": "https://github.com/benjaminzwicker/post-migration-automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.29.0"
+  }
+}
