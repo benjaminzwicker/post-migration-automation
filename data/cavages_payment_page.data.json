@@ -1,3 +1,6 @@
 {
-    "path": "/payment_approval.html"
+    "path": "/payment_approval.html",
+    "details_header": "Sent Payment Details",
+    "approval_history_header": "Payment Approval History",
+    "audit_trail_header": "Audit Trail"
 }

@@ -35,3 +35,15 @@ test('Pending payments page can navigate to cavages payment approval page @postm
   await pendingPaymentsPage.selectCavages();
   await expect(page).toHaveURL(cavagesPaymentPageData.path);
 });
+
+test('Cavages payment approval page displays payment details header @postmigration', async ({ cavagesPaymentPage }) => {
+  await expect(cavagesPaymentPage.detailsHeader).toBeVisible();
+});
+
+test('Cavages payment approval page displays payment approval history header @postmigration', async ({ cavagesPaymentPage }) => {
+  await expect(cavagesPaymentPage.approvalHistoryHeader).toBeVisible();
+});
+
+test('Cavages payment approval page displays audit trail header @postmigration', async ({ cavagesPaymentPage }) => {
+  await expect(cavagesPaymentPage.auditTrailHeader).toBeVisible();
+});
