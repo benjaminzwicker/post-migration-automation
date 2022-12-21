@@ -3,7 +3,7 @@
 # Table of contents
 - [Table of contents](#table-of-contents)
   - [Usage](#usage)
-    - [Running GitHub Actions](#github-actions)
+    - [Running GitHub Actions](#running-github-actions)
     - [Running Locally](#running-locally)
   - [Design Decisions](#design-decisions)
     - [Fixtures](#fixtures)
@@ -12,7 +12,7 @@
 
 # Usage
 ## Running GitHub Actions
-GitHub actions have been created to manually run tests, and automatically run tests on every pull and PR. Manual runs take the base url as input, which is set to an environment variable that is read by playwright.config.ts.
+GitHub actions have been created to manually run tests, and automatically run tests on every pull and PR. Manual runs take the base url as input, which is set to an environment variable that is read by playwright.config.ts. Go to https://github.com/benjaminzwicker/post-migration-automation/actions/workflows/test_manual.yml and select `Run workflow` to run manually
 
 ## Running Locally
 * Clone: `git clone git@github.com:benjaminzwicker/post-migration-automation.git --checkout`
