@@ -1,5 +1,4 @@
 import { Locator, Page } from '@playwright/test';
-import * as paymentApprovalsPageData from '../data/payment_approvals_page.data.json';
 import { DashboardPage } from './dashboard.page';
 
 export class PaymentApprovalsPage {
