@@ -1,5 +1,6 @@
 {
     "path": "/pending_payments.html",
+    "pending_payments_header": "Payments currently in transit",
     "contacts": {
         "cavages": "Cavages"
     }
