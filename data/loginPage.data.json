@@ -1,0 +1,10 @@
+{
+    "path": "/login.html",
+    "textInputs": {
+        "email": "Enter Email",
+        "password": "Enter Password"
+    },
+    "buttons": {
+        "signIn": "Sign In"
+    }
+}
