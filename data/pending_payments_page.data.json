@@ -1,3 +1,6 @@
 {
-    "path": "/pending_payments.html"
+    "path": "/pending_payments.html",
+    "contacts": {
+        "cavages": "Cavages"
+    }
 }

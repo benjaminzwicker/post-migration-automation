@@ -3,14 +3,14 @@ import { CompanySelectPage } from '../pages/company_select.page';
 import { DashboardPage } from '../pages/dashboard.page';
 import { PaymentApprovalsPage } from '../pages/payment_approvals.page';
 import { PendingPaymentsPage } from '../pages/pending_payments.page';
-import { PaymentApprovalPage } from '../pages/payment_approval.page';
+import { CavagesPaymentPage } from '../pages/cavages_payment.page';
 
 type Pages = {
     companySelectPage: CompanySelectPage;
     dashboardPage: DashboardPage;
     paymentApprovalsPage: PaymentApprovalsPage;
     pendingPaymentsPage: PendingPaymentsPage;
-    paymentApprovalPage: PaymentApprovalPage;
+    cavagesPaymentPage: CavagesPaymentPage;
   };
 
 export const test = baseTest.extend<Pages>({
@@ -38,10 +38,10 @@ export const test = baseTest.extend<Pages>({
     await use(pendingPaymentsPage);
   },
 
-  paymentApprovalPage: async ({ page }, use) => {
-    const paymentApprovalPage = new PaymentApprovalPage(page);
-    await paymentApprovalPage.goto();
-    await use(paymentApprovalPage);
+  cavagesPaymentPage: async ({ page }, use) => {
+    const cavagesPaymentPage = new CavagesPaymentPage(page);
+    await cavagesPaymentPage.goto();
+    await use(cavagesPaymentPage);
   },
 });
 export { expect } from '@playwright/test';
