@@ -31,7 +31,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Add environment variables
-      run: export BASE_URL="${{ github.event.inputs.base_url }}"
+      run: echo "BASE_URL=${{ github.event.inputs.base_url }}" >> $GITHUB_ENV
     - name: Run Playwright tests
       run: npx playwright test
     - uses: actions/upload-artifact@v3
