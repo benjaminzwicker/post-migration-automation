@@ -1,5 +1,5 @@
 import { Locator, Page } from '@playwright/test';
-import * as loginPageData from "../data/loginPage.data.json";
+import * as loginPageData from "../data/login_page.data.json";
 
 export class LoginPage {
   readonly page: Page;
@@ -11,7 +11,7 @@ export class LoginPage {
     this.page = page;
     this.emailInput = page.getByPlaceholder(loginPageData.textInputs.email);
     this.passwordInput = page.getByPlaceholder(loginPageData.textInputs.password);
-    this.signInButton = page.locator('a', { hasText: loginPageData.buttons.signIn });
+    this.signInButton = page.locator('a', { hasText: loginPageData.buttons.signIn }).first();
   }
 
   async goto() {
@@ -21,6 +21,6 @@ export class LoginPage {
   async signIn({ email, password }) {
     await this.emailInput.fill(email);
     await this.passwordInput.fill(password);
-    await this.signInButton.first().click();
+    await this.signInButton.click();
   }
 };

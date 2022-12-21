@@ -9,8 +9,8 @@ on:
     # Inputs the workflow accepts.
     inputs:
       base_url:
-        # Friendly description to be shown in the UI instead of 'name'
-        description: 'Person to greet'
+        # Friendly description to be shown in the UI
+        description: 'Base URL'
         # Default value if no value is explicitly provided
         default: 'https://happy-field-011ab7b10.2.azurestaticapps.net/'
         # Input has to be provided for the workflow to run
