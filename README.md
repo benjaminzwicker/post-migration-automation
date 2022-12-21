@@ -18,6 +18,7 @@ GitHub actions have been created to manually run tests, and automatically run te
 * Clone: `git clone git@github.com:benjaminzwicker/post-migration-automation.git --checkout`
 * Navigate to project: `cd '.\post-migration-automation\`
 * From Playwright terminal open command prompt and set the environment variable `set BASE_URL=https://happy-field-011ab7b10.2.azurestaticapps.net/`
+* Install packages from npm: `npm i`
 * Run tests: `npx playwright test` (add the `--headed` tag to watch the tests running)
 
 # Design Decisions
