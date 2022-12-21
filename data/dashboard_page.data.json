@@ -1,3 +1,7 @@
 {
-    "path": "/dashboard.html"
+    "path": "/dashboard.html",
+    "nav": {
+        "paymentApprovals": "Payment Approvals",
+        "pendingPayments": "Pending Payments"
+    }
 }
