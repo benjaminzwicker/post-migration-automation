@@ -1,0 +1,7 @@
+{
+    "path": "/company_select.html",
+    "companies_header": "Company Name",
+    "companies" : {
+        "plooto": "Plooto Inc"
+    }
+}
