@@ -6,6 +6,7 @@ import * as cavagesPaymentPageData from '../data/cavages_payment_page.data.json'
 
 test('Company Selection page displays a list of companies containing Plooto @postmigration', async ({ companySelectPage }) => {
   await expect(companySelectPage.companiesHeader).toBeVisible;
+  await expect(await companySelectPage.companiesList.count()).toBeGreaterThan(1)
 });
 
 test('Selecting Plooto from company selection will lead to the dashboard @postmigration', async ({ companySelectPage, page }) => {
@@ -24,10 +25,12 @@ test('Plooto dashboard can navigate to pending payments @postmigration', async (
 });
 
 test('Payment approvals has a single payment approval @postmigration', async ({ paymentApprovalsPage, page }) => {
+  await expect(paymentApprovalsPage.paymentApprovalsHeader).toBeVisible;
   await expect(paymentApprovalsPage.paymentApprovalItems).toHaveCount(2); // Two including header
 });
 
-test('Pending payments displays multiple ongoing payments @postmigration', async ({ pendingPaymentsPage, page }) => {
+test('Pending payments displays multiple pending payments @postmigration', async ({ pendingPaymentsPage, page }) => {
+  await expect(pendingPaymentsPage.pendingPaymentsHeader).toBeVisible;
   await expect(await pendingPaymentsPage.pendingPaymentItems.count()).toBeGreaterThan(1);
 });
 
