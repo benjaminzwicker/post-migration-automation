@@ -4,9 +4,11 @@ import * as companySelectPageData from '../data/company_select_page.data.json';
 export class CompanySelectPage {
   readonly page: Page;
   readonly plooto: Locator;
+  readonly companiesHeader: Locator;
 
   constructor(page: Page) {
     this.page = page;
+    this.companiesHeader = page.locator('a', { hasText: companySelectPageData.companies_header });
     this.plooto = page.getByRole('row').getByText(companySelectPageData.companies.plooto).first();
   }
 
