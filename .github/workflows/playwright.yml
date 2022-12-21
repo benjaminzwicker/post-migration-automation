@@ -17,6 +17,8 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+    - name: Add environment variables
+      run: export BASE_URL=https://happy-field-011ab7b10.2.azurestaticapps.net/
     - name: Run Playwright tests
       run: npx playwright test
     - uses: actions/upload-artifact@v3
